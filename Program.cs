@@ -4,25 +4,35 @@ class Program
 {
     static void Main()
     {
-        // Part 1: Define an array of strings that will be used to store different phrases
         string[] phrases = { "Hello, ", "How are you, ", "Welcome, " };
 
-        // Prompting the user for input and storing that input in a variable
-        Console.WriteLine("Please enter some text:");
-        string userInput = Console.ReadLine();
-
-        // Part 2: Iterate through the array using a loop
-        for (int i = 0; i < phrases.Length; i++)
+        // Corrected the infinite loop by adding a condition to exit
+        while (true) // Start of the infinite loop
         {
-            // For each element in the array, append the user's text to the end of the string
-            phrases[i] += userInput; // This modifies the array in place, no output is shown yet
-        }
+            Console.WriteLine("Please enter some text:");
+            string userInput = Console.ReadLine();
 
-        // Part 3: Loop through the array again to display each concatenated string
-        for (int i = 0; i < phrases.Length; i++)
-        {
-            // Print each element of the array to the console, showing the updated strings
-            Console.WriteLine(phrases[i]);
+            for (int i = 0; i < phrases.Length; i++)
+            {
+                phrases[i] += userInput;
+            }
+
+            // Loop that prints each string in the array
+            for (int i = 0; i < phrases.Length; i++)
+            {
+                Console.WriteLine(phrases[i]);
+            }
+
+            // Asking the user if they want to continue or exit the loop
+            Console.WriteLine("Would you like to add more text? (yes/no)");
+            string answer = Console.ReadLine();
+
+            // Conditional check to break the infinite loop
+            if (answer.ToLower() != "yes")
+            {
+                break; // Break statement to exit the loop
+            }
+            // The loop will continue if the user inputs "yes", otherwise it will exit
         }
     }
 }
