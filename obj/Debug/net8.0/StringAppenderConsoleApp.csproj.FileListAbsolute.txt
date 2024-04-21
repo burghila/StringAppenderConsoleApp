@@ -1,0 +1,14 @@
+C:\Users\burgh\Desktop\StringAppenderConsoleApp\StringAppenderConsoleApp\bin\Debug\net8.0\StringAppenderConsoleApp.exe
+C:\Users\burgh\Desktop\StringAppenderConsoleApp\StringAppenderConsoleApp\bin\Debug\net8.0\StringAppenderConsoleApp.deps.json
+C:\Users\burgh\Desktop\StringAppenderConsoleApp\StringAppenderConsoleApp\bin\Debug\net8.0\StringAppenderConsoleApp.runtimeconfig.json
+C:\Users\burgh\Desktop\StringAppenderConsoleApp\StringAppenderConsoleApp\bin\Debug\net8.0\StringAppenderConsoleApp.dll
+C:\Users\burgh\Desktop\StringAppenderConsoleApp\StringAppenderConsoleApp\bin\Debug\net8.0\StringAppenderConsoleApp.pdb
+C:\Users\burgh\Desktop\StringAppenderConsoleApp\StringAppenderConsoleApp\obj\Debug\net8.0\StringAppenderConsoleApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\burgh\Desktop\StringAppenderConsoleApp\StringAppenderConsoleApp\obj\Debug\net8.0\StringAppenderConsoleApp.AssemblyInfoInputs.cache
+C:\Users\burgh\Desktop\StringAppenderConsoleApp\StringAppenderConsoleApp\obj\Debug\net8.0\StringAppenderConsoleApp.AssemblyInfo.cs
+C:\Users\burgh\Desktop\StringAppenderConsoleApp\StringAppenderConsoleApp\obj\Debug\net8.0\StringAppenderConsoleApp.csproj.CoreCompileInputs.cache
+C:\Users\burgh\Desktop\StringAppenderConsoleApp\StringAppenderConsoleApp\obj\Debug\net8.0\StringAppenderConsoleApp.dll
+C:\Users\burgh\Desktop\StringAppenderConsoleApp\StringAppenderConsoleApp\obj\Debug\net8.0\refint\StringAppenderConsoleApp.dll
+C:\Users\burgh\Desktop\StringAppenderConsoleApp\StringAppenderConsoleApp\obj\Debug\net8.0\StringAppenderConsoleApp.pdb
+C:\Users\burgh\Desktop\StringAppenderConsoleApp\StringAppenderConsoleApp\obj\Debug\net8.0\StringAppenderConsoleApp.genruntimeconfig.cache
+C:\Users\burgh\Desktop\StringAppenderConsoleApp\StringAppenderConsoleApp\obj\Debug\net8.0\ref\StringAppenderConsoleApp.dll
