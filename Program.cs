@@ -4,25 +4,33 @@ class Program
 {
     static void Main()
     {
-        // Part 1: Define an array of strings that will be used to store different phrases
+        // Define an array of strings
         string[] phrases = { "Hello, ", "How are you, ", "Welcome, " };
 
-        // Prompting the user for input and storing that input in a variable
+        // Ask for user input
         Console.WriteLine("Please enter some text:");
         string userInput = Console.ReadLine();
 
-        // Part 2: Iterate through the array using a loop
+        // Append user input to each string in the array using a loop with '<' operator
         for (int i = 0; i < phrases.Length; i++)
         {
-            // For each element in the array, append the user's text to the end of the string
-            phrases[i] += userInput; // This modifies the array in place, no output is shown yet
+            phrases[i] += userInput;
         }
 
-        // Part 3: Loop through the array again to display each concatenated string
+        // Print each string in the array using a loop with '<' operator
         for (int i = 0; i < phrases.Length; i++)
         {
-            // Print each element of the array to the console, showing the updated strings
-            Console.WriteLine(phrases[i]);
+            Console.WriteLine(phrases[i] + " (added text with '<' loop)");
+        }
+
+        // Prompt for continuation
+        Console.WriteLine("Press any key to continue to the '<=' loop...");
+        Console.ReadKey();
+
+        // Print each string in the array using a loop with '<=' operator
+        for (int i = 0; i <= phrases.Length - 1; i++)
+        {
+            Console.WriteLine(phrases[i] + " (added text with '<=' loop)");
         }
     }
 }
