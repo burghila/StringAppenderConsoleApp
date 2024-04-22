@@ -1,28 +1,95 @@
 ﻿using System;
+using System.Collections.Generic;
+using static System.Net.Mime.MediaTypeNames;
 
 class Program
 {
     static void Main()
     {
-        // Part 1: Define an array of strings that will be used to store different phrases
+        // Part 1: One-dimensional array of strings
         string[] phrases = { "Hello, ", "How are you, ", "Welcome, " };
 
-        // Prompting the user for input and storing that input in a variable
+        // Ask user to input some text
         Console.WriteLine("Please enter some text:");
         string userInput = Console.ReadLine();
 
-        // Part 2: Iterate through the array using a loop
+        // Loop that iterates through each string in the array and appends the user's input
         for (int i = 0; i < phrases.Length; i++)
         {
-            // For each element in the array, append the user's text to the end of the string
-            phrases[i] += userInput; // This modifies the array in place, no output is shown yet
+            phrases[i] += userInput;
         }
 
-        // Part 3: Loop through the array again to display each concatenated string
+        // Print each updated string in the array
         for (int i = 0; i < phrases.Length; i++)
         {
-            // Print each element of the array to the console, showing the updated strings
             Console.WriteLine(phrases[i]);
+        }
+
+        // Part 3: Loop with '<' and '<=' comparisons
+        Console.WriteLine("Press any key to continue to the '<' loop...");
+        Console.ReadKey();
+
+        // Using '<' operator to print strings
+        for (int i = 0; i < phrases.Length; i++)
+        {
+            Console.WriteLine(phrases[i] + " (added text with '<' loop)");
+        }
+
+        Console.WriteLine("Press any key to continue to the '<=' loop...");
+        Console.ReadKey();
+
+        // Using '<=' operator to print strings
+        for (int i = 0; i <= phrases.Length - 1; i++)
+        {
+            Console.WriteLine(phrases[i] + " (added text with '<=' loop)");
+        }
+
+        // Part 4: List of unique strings and search functionality
+        List<string> uniqueStrings = new List<string> { "apple", "banana", "cherry", "date", "elderberry" };
+
+        Console.WriteLine("Please enter text to search for in the list:");
+        string searchText = Console.ReadLine();
+        bool matchFound = false;
+
+        // Loop to find the search text in the list
+        for (int i = 0; i < uniqueStrings.Count; i++)
+        {
+            if (uniqueStrings[i].Contains(searchText))
+            {
+                Console.WriteLine($"Matching text found at index: {i}");
+                matchFound = true;
+                break; // Exit loop once a match is found
+            }
+        }
+
+        // Inform user if no match is found
+        if (!matchFound)
+        {
+            Console.WriteLine("Your input is not on the list.");
+        }
+
+        // Part 5: List of strings with duplicates
+        List<string> phrasesWithDuplicates = new List<string> { "apple", "banana", "cherry", "apple", "date", "cherry" };
+
+        // Ask user to input text to search for in the list with duplicates
+        Console.WriteLine("Please enter text to search for in the list with duplicates:");
+        searchText = Console.ReadLine();
+        found = false;  // Reset found flag for new search
+
+        // Iterate through the list and find all occurrences of the search text
+        for (int i = 0; i < phrasesWithDuplicates.Count; i++)
+        {
+            if (phrasesWithDuplicates[i].Contains(searchText))
+            {
+                Console.WriteLine($"Matching text found at index: {i}");
+                found = true;
+            }
+        }
+
+        // Check if the search text was not found at all
+        if (!found)
+        {
+            Console.WriteLine("Your input is not on the list.");
         }
     }
 }
